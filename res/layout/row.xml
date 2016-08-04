@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:maskimage="http://schemas.android.com/apk/res/com.hotveryspicy.maskimage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     >
+
+    <com.hotveryspicy.maskimage.MaskImage
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="200dp"
+        maskimage:frame="@drawable/main_contents_smallcircle"
+        maskimage:image="@drawable/nature"
+        maskimage:mask="@drawable/main_contents_smallcircle" />
+
+    <com.hotveryspicy.maskimage.MaskImage
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="80dp"
+        android:onClick="clickSmallImage2"
+        maskimage:frame="@drawable/main_contents_smallcircle"
+        maskimage:image="@drawable/player_guide"
+        maskimage:mask="@drawable/main_contents_smallcircle" />
+
+    <com.hotveryspicy.maskimage.MaskImage
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="170dp"
+        maskimage:frame="@drawable/main_contents_smallcircle"
+        maskimage:image="@drawable/nature"
+        maskimage:mask="@drawable/main_contents_smallcircle" />
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp" >
+
+        <com.hotveryspicy.maskimage.MaskImage
+            android:id="@+id/centerImageview"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            maskimage:frame="@drawable/main_contents_bigcircle_back"
+            maskimage:image="@drawable/nature"
+            maskimage:mask="@drawable/main_contents_bigcircle" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/main_contents_bigcircle_shadow" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="210dp"
+        android:onClick="clickStar"
+        android:src="@drawable/main_contents_favorite_nor" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/main_contents_like"
+        android:gravity="center"
+        android:text="25" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/main_contents_reply"
+        android:gravity="center"
+        android:text="250" />
+
+</FrameLayout>
